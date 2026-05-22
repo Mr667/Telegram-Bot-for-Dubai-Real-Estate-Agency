@@ -25,10 +25,77 @@ This bot acts as a digital real estate agent, bridging the gap between property 
 * **Dynamic Catalog Updates:** Agents can add, modify, or archive listings on-the-go via hidden, secure admin commands.
 
 ---
+Installation
+Clone the repository:
+git clone [https://github.com/yourusername/dubai-real-estate-bot.git](https://github.com/yourusername/dubai-real-estate-bot.git)
+    cd dubai-real-estate-bot
+    ```
+
+2.  **Create a virtual environment:**
+    
+```bash
+    python -m venv venv
+    source venv/bin/activate  # On Windows use: venv\Scripts\activate
+    ```
+
+3.  **Install dependencies:**
+    
+```bash
+    pip install -r requirements.txt
+    ```
+
+4.  **Configure Environment Variables:**
+    Create a `.env` file in the root directory and add your credentials:
+    
+```env
+    BOT_TOKEN=your_telegram_bot_token_here
+    ADMIN_ID=your_telegram_user_id
+    DATABASE_URL=sqlite:///real_estate.db
+    ```
+
+5.  **Initialize the Database & Run:**
+    
+```bash
+    python init_db.py
+    python main.py
+    ```
+
+---
+
+## 📁 Project Structure
+
+```text
+dubai-real-estate-bot/
+│
+├── main.py                # Entry point of the bot
+├── config.py              # Configuration and environment variables
+├── requirements.txt       # Python dependencies
+├── .env.example           # Example environment variables file
+│
+├── handlers/              # Command and message handlers
+│   ├── start.py           # /start command handler
+│   ├── search.py          # Property search flow
+│   └── admin.py           # Admin commands for agents
+│
+├── database/              # Database models and queries
+│   ├── models.py          # Database models (Property, User, Lead)
+│   └── db_manager.py      # CRUD operations
+│
+└── assets/                # Default images and localized text
+    └── text_responses.json
+
 
 ## ⚙️ How It Works
 
 The bot relies on a conversational state machine architecture to provide a seamless user journey without overwhelming the client.
+
+1 - The Entry & Localization: The user interacts with the bot via /start. The bot identifies the user or prompts them to select a preferred language (e.g., English, Arabic, Russian).
+
+2 - Stateful Conversation Flow: Built using the ConversationHandler from python-telegram-bot. The bot remembers user selections sequentially (Purpose -> Property Type -> Area -> Budget) without storing heavy state data.
+
+3 - Database Matching: Once the filters are set, the bot queries an optimized SQLite/PostgreSQL database to pull active matches, rendering them as "Property Cards" featuring inline buttons for pagination.
+
+4 - The Lead Funnel: When a user clicks "Contact Agent about this Property", the bot initiates a secure contact-sharing workflow. Upon verification, the script packages the user's details along with the specific property ID and triggers a webhook or notification to the agency's broker desk.
 
 ```text
  [ User Starts Bot ] ──> [ Selects Language ] ──> [ Main Menu: Buy / Rent / Contact ]
@@ -38,3 +105,4 @@ The bot relies on a conversational state machine architecture to provide a seaml
  [ Interactive Filters ] ──> [ Matches Found? ] ──> YES ──> [ Display Property Cards ] ──> [ Click "Interested" ] ──> [ Capture Lead & Notify CRM ]
                                    │
                                    └──> NO ──> [ Offer Custom Consultation Request ]
+
