@@ -1,108 +1,99 @@
-# 🏙️ Dubai Real Estate Telegram Bot
+# Dubai Real Estate Telegram Bot 🏙️
 
-![Python Version](https://img.shields.io/badge/python-3.9%2B-blue.svg)
-![Telegram Bot API](https://img.shields.io/badge/Telegram%20Bot%20API-python--telegram--bot-2CA5E0.svg)
-![License](https://img.shields.io/badge/license-MIT-green.svg)
-![Status](https://img.shields.io/badge/status-Active-success.svg)
+A 24/7 production-ready Telegram Bot built with Python and `python-telegram-bot` to help users find real estate listings in Dubai. It features a conversational interface, fetches live property data (mock Bayut integration provided), captures leads seamlessly into Google Sheets, and uses SQLite for persistent session management.
 
-A clean, minimalist, and highly efficient Telegram bot built with Python, designed specifically for Dubai real estate agencies. This bot automates property inquiries, showcases premium listings, and acts as a 24/7 lead generation assistant for brokers and agents.
+## Features
 
----
-
-## 🤖 What the Bot Does
-
-This bot acts as a digital real estate agent, bridging the gap between property seekers and your agency. It solves the friction of traditional browsing by delivering instant information directly within Telegram.
-
-### For Clients & Investors:
-* **Interactive Property Catalog:** Browse through off-plan projects, secondary market properties, or premium rentals in Dubai.
-* **Tailored Filtering:** Filter listings by type (Apartment, Villa, Townhouse), price range, and location (e.g., Downtown Dubai, Dubai Marina, JVC).
-* **Instant Brochures:** Download floor plans, project brochures, and view high-resolution property galleries instantly.
-* **Direct Agent Callback:** Request a callback or WhatsApp connection with a live agent for a specific property with a single click.
-
-### For the Real Estate Agency:
-* **24/7 Automated Lead Capture:** Collects user names, phone numbers, and investment preferences even outside regular business hours.
-* **Instant Agent Notifications:** Instantly routes qualified buyer leads directly to an internal agency Telegram group or CRM system.
-* **Dynamic Catalog Updates:** Agents can add, modify, or archive listings on-the-go via hidden, secure admin commands.
-
----
-Installation
-Clone the repository:
-git clone [https://github.com/yourusername/dubai-real-estate-bot.git](https://github.com/yourusername/dubai-real-estate-bot.git)
-    cd dubai-real-estate-bot
-    ```
-
-2.  **Create a virtual environment:**
-    
-```bash
-    python -m venv venv
-    source venv/bin/activate  # On Windows use: venv\Scripts\activate
-    ```
-
-3.  **Install dependencies:**
-    
-```bash
-    pip install -r requirements.txt
-    ```
-
-4.  **Configure Environment Variables:**
-    Create a `.env` file in the root directory and add your credentials:
-    
-```env
-    BOT_TOKEN=your_telegram_bot_token_here
-    ADMIN_ID=your_telegram_user_id
-    DATABASE_URL=sqlite:///real_estate.db
-    ```
-
-5.  **Initialize the Database & Run:**
-    
-```bash
-    python init_db.py
-    python main.py
-    ```
+- **Conversational Interface**: Interactive menus to choose between Rent/Sale and Location.
+- **Live Data Integration**: Fetches property listings asynchronously via a Bayut API client.
+- **Lead Capture to Google Sheets**: Connects securely to Google Sheets to automatically save leads (timestamp, username, phone, and criteria) using `gspread`.
+- **Session Management**: Lightweight and robust state management using `aiosqlite`.
+- **Uptime Monitoring**: A background "Heartbeat" task logs to `system.log` to prove the bot is running 24/7.
+- **Production Ready**: Includes both a `Dockerfile` and PM2 `process.json` for easy cloud deployment.
 
 ---
 
-## 📁 Project Structure
+## Step-by-Step Setup Guide
 
-```text
-dubai-real-estate-bot/
-│
-├── main.py                # Entry point of the bot
-├── config.py              # Configuration and environment variables
-├── requirements.txt       # Python dependencies
-├── .env.example           # Example environment variables file
-│
-├── handlers/              # Command and message handlers
-│   ├── start.py           # /start command handler
-│   ├── search.py          # Property search flow
-│   └── admin.py           # Admin commands for agents
-│
-├── database/              # Database models and queries
-│   ├── models.py          # Database models (Property, User, Lead)
-│   └── db_manager.py      # CRUD operations
-│
-└── assets/                # Default images and localized text
-    └── text_responses.json
+### 1. Prerequisites
 
+Before starting, make sure you have:
+- **Python 3.10+** (if running locally without Docker)
+- A **Telegram Bot Token** from [@BotFather](https://t.me/BotFather)
+- A **Google Cloud Project** with the Google Sheets API and Google Drive API enabled.
+- A **Google Sheets Credentials JSON file** (Service Account).
 
-## ⚙️ How It Works
+### 2. Google Sheets Setup
 
-The bot relies on a conversational state machine architecture to provide a seamless user journey without overwhelming the client.
+1. Go to the [Google Cloud Console](https://console.cloud.google.com/).
+2. Enable the **Google Sheets API** and **Google Drive API**.
+3. Create a **Service Account** and generate a JSON key. Save this file as `service_account.json` in the root folder of this project.
+4. Create a new Google Sheet. Let's call it "Bayut Bot Leads".
+5. **CRITICAL STEP**: Open your `service_account.json` file, find the `client_email` address, and share your new Google Sheet with this email address (give it Editor access).
+6. Copy the URL of your Google Sheet.
 
-1 - The Entry & Localization: The user interacts with the bot via /start. The bot identifies the user or prompts them to select a preferred language (e.g., English, Arabic, Russian).
+### 3. Environment Variables
 
-2 - Stateful Conversation Flow: Built using the ConversationHandler from python-telegram-bot. The bot remembers user selections sequentially (Purpose -> Property Type -> Area -> Budget) without storing heavy state data.
+1. Copy the example environment file:
+   ```bash
+   cp .env.example .env
+   ```
+2. Open the `.env` file and fill in your details:
+   - `TELEGRAM_TOKEN`: Your token from @BotFather.
+   - `GOOGLE_SHEETS_CREDENTIALS_FILE`: The name of your json file (e.g., `service_account.json`).
+   - `GOOGLE_SHEET_URL_OR_ID`: The full URL of the Google Sheet you created.
+   - `BAYUT_API_KEY`: If you have a RapidAPI key for Bayut, enter it here (optional).
 
-3 - Database Matching: Once the filters are set, the bot queries an optimized SQLite/PostgreSQL database to pull active matches, rendering them as "Property Cards" featuring inline buttons for pagination.
+### 4. Running Locally (Development)
 
-4 - The Lead Funnel: When a user clicks "Contact Agent about this Property", the bot initiates a secure contact-sharing workflow. Upon verification, the script packages the user's details along with the specific property ID and triggers a webhook or notification to the agency's broker desk.
+To run the bot on your own computer:
 
-```text
- [ User Starts Bot ] ──> [ Selects Language ] ──> [ Main Menu: Buy / Rent / Contact ]
-                                                            │
-  ┌─────────────────────────────────────────────────────────┘
-  ▼
- [ Interactive Filters ] ──> [ Matches Found? ] ──> YES ──> [ Display Property Cards ] ──> [ Click "Interested" ] ──> [ Capture Lead & Notify CRM ]
-                                   │
-                                   └──> NO ──> [ Offer Custom Consultation Request ]
+1. Create a virtual environment (recommended):
+   ```bash
+   python -m venv venv
+   source venv/bin/activate  # On Windows use: venv\Scripts\activate
+   ```
+2. Install the required dependencies:
+   ```bash
+   pip install -r requirements.txt
+   ```
+3. Start the bot:
+   ```bash
+   python main.py
+   ```
 
+### 5. Deployment (Production)
+
+To deploy the bot to a Linux server (like AWS, DigitalOcean, or Linode) so it runs 24/7, the easiest way is using Docker.
+
+1. SSH into your server.
+2. Clone or copy your bot files to the server.
+3. Make sure your `.env` and `service_account.json` are present on the server.
+4. Make the deployment script executable and run it:
+   ```bash
+   chmod +x deploy.sh
+   ./deploy.sh
+   ```
+*This script will automatically install Docker if it's missing, build the bot image, and run it continuously in the background.*
+
+To check the logs on your server:
+```bash
+docker logs -f bayut-bot_container
+```
+
+**Alternative: PM2 Deployment**
+If you prefer Node's PM2 instead of Docker:
+1. Install PM2: `npm install pm2 -g`
+2. Run: `pm2 start process.json`
+
+---
+
+## File Structure
+
+- `main.py`: Core bot logic and Conversation Handlers.
+- `bayut_api.py`: Async integration for fetching property data.
+- `gsheets_handler.py`: Async integration for appending leads to Google Sheets.
+- `database.py`: Async SQLite initialization and session tracking.
+- `config.py`: Environment variable management and validation.
+- `logger.py`: Rotating file logging and heartbeat task.
+- `deploy.sh` & `Dockerfile` & `process.json`: Deployment configurations.

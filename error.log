@@ -1,0 +1,32 @@
+2026-05-02 10:06:27,617 - bayut_bot - ERROR - Failed to connect to Google Sheets: [Errno 2] No such file or directory: 'service_account.json'
+2026-05-02 10:06:27,620 - bayut_bot - ERROR - Fatal error: Missing required environment variables: TELEGRAM_TOKEN, GOOGLE_SHEET_URL_OR_ID
+2026-05-02 10:11:14,897 - bayut_bot - ERROR - Failed to connect to Google Sheets: [Errno 2] No such file or directory: 'service_account.json'
+2026-05-02 21:46:16,738 - bayut_bot - ERROR - Failed to connect to Google Sheets: [Errno 2] No such file or directory: 'service_account.json'
+2026-05-02 21:47:01,770 - bayut_bot - ERROR - Failed to connect to Google Sheets: [Errno 2] No such file or directory: 'service_account.json'
+2026-05-02 21:51:47,291 - bayut_bot - ERROR - Google Sheets credentials file not found: service_account.json
+2026-05-02 21:51:47,292 - bayut_bot - ERROR - Google Sheets credentials file not found: service_account.json
+2026-05-05 15:34:23,265 - bayut_bot - ERROR - Google Sheets URL or ID is not configured.
+2026-05-05 15:34:23,267 - bayut_bot - ERROR - Fatal error: Missing required environment variables: TELEGRAM_TOKEN, GOOGLE_SHEET_URL_OR_ID
+2026-05-05 15:35:40,756 - bayut_bot - ERROR - Google Sheets URL or ID is not configured.
+2026-05-05 15:35:40,757 - bayut_bot - ERROR - Fatal error: Missing required environment variables: TELEGRAM_TOKEN, GOOGLE_SHEET_URL_OR_ID
+2026-05-05 15:36:43,830 - bayut_bot - ERROR - Google Sheets URL or ID is not configured.
+2026-05-05 15:36:43,831 - bayut_bot - ERROR - Fatal error: Missing required environment variables: TELEGRAM_TOKEN, GOOGLE_SHEET_URL_OR_ID
+2026-05-05 15:37:15,283 - bayut_bot - ERROR - Google Sheets URL or ID is not configured.
+2026-05-05 15:37:15,284 - bayut_bot - ERROR - Fatal error: Missing required environment variables: TELEGRAM_TOKEN, GOOGLE_SHEET_URL_OR_ID
+2026-05-05 15:46:01,754 - bayut_bot - ERROR - Bayut API error: Status 404
+2026-05-05 15:46:17,874 - bayut_bot - ERROR - Bayut API error: Status 404
+2026-05-05 15:47:14,844 - bayut_bot - ERROR - Bayut API error: Status 404
+2026-05-05 15:51:10,318 - bayut_bot - ERROR - Bayut API error: Status 404, Response: {"message":"API doesn't exists"}
+2026-05-05 15:57:03,706 - bayut_bot - ERROR - Bayut API error: Status 404, Response: {"message":"API doesn't exists"}
+2026-05-05 16:01:00,160 - bayut_bot - ERROR - Bayut API error: Status 404, Response: {"message":"API doesn't exists"}
+2026-05-05 16:03:38,382 - bayut_bot - ERROR - Bayut API error: Status 404, Response: {"message":"API doesn't exists"}
+2026-05-05 16:11:08,120 - bayut_bot - ERROR - Bayut API error: Status 404, Response: {"message":"API doesn't exists"}
+2026-05-05 16:18:15,608 - bayut_bot - ERROR - Bayut API error: Status 404, Response: {"message":"API doesn't exists"}
+2026-05-05 16:23:17,261 - bayut_bot - ERROR - Bayut API error: Status 404, Response: {"message":"API doesn't exists"}
+2026-05-05 16:41:44,040 - bayut_bot - ERROR - Bayut API error: Status 404, Response: {"message":"API doesn't exists"}
+2026-05-05 16:49:22,484 - bayut_bot - ERROR - Bayut API error: Status 404, Response: {"message":"Endpoint '\/properties\/list' does not exist"}
+2026-05-05 16:56:26,220 - bayut_bot - ERROR - Error connecting to Bayut API: 'https://uae-real-estate2.p.rapidapi.com/floorplans?location_slug=/abu-dhabi/al-reem-island/shams-abu-dhabi/shams-gate-district/the-gate-tower/the-gate-tower-2'+
+2026-05-05 17:00:44,009 - bayut_bot - ERROR - Bayut API error: Status 403, Response: {"message":"You are not subscribed to this API."}
+2026-05-05 17:01:34,024 - bayut_bot - ERROR - Bayut API error: Status 404, Response: {"message":"Endpoint '\/' does not exist"}
+2026-05-10 14:49:25,883 - bayut_bot - ERROR - Error appending lead to Google Sheets: APIError: [403]: The caller does not have permission
+2026-05-10 14:49:25,885 - bayut_bot - ERROR - Failed to save lead for user 988600454

@@ -1,0 +1,189 @@
+2026-05-02 10:06:27,617 - bayut_bot - ERROR - Failed to connect to Google Sheets: [Errno 2] No such file or directory: 'service_account.json'
+2026-05-02 10:06:27,620 - bayut_bot - ERROR - Fatal error: Missing required environment variables: TELEGRAM_TOKEN, GOOGLE_SHEET_URL_OR_ID
+2026-05-02 10:11:14,897 - bayut_bot - ERROR - Failed to connect to Google Sheets: [Errno 2] No such file or directory: 'service_account.json'
+2026-05-02 10:11:14,911 - bayut_bot - INFO - Database initialized successfully.
+2026-05-02 10:11:14,913 - bayut_bot - WARNING - No BAYUT_API_KEY provided. Returning dummy data for testing.
+2026-05-02 21:46:16,738 - bayut_bot - ERROR - Failed to connect to Google Sheets: [Errno 2] No such file or directory: 'service_account.json'
+2026-05-02 21:47:01,770 - bayut_bot - ERROR - Failed to connect to Google Sheets: [Errno 2] No such file or directory: 'service_account.json'
+2026-05-02 21:47:01,780 - bayut_bot - INFO - Database initialized successfully.
+2026-05-02 21:47:03,025 - bayut_bot - INFO - Starting bot polling...
+2026-05-02 21:51:47,291 - bayut_bot - ERROR - Google Sheets credentials file not found: service_account.json
+2026-05-02 21:51:47,292 - bayut_bot - ERROR - Google Sheets credentials file not found: service_account.json
+2026-05-05 15:34:23,265 - bayut_bot - ERROR - Google Sheets URL or ID is not configured.
+2026-05-05 15:34:23,267 - bayut_bot - ERROR - Fatal error: Missing required environment variables: TELEGRAM_TOKEN, GOOGLE_SHEET_URL_OR_ID
+2026-05-05 15:35:40,756 - bayut_bot - ERROR - Google Sheets URL or ID is not configured.
+2026-05-05 15:35:40,757 - bayut_bot - ERROR - Fatal error: Missing required environment variables: TELEGRAM_TOKEN, GOOGLE_SHEET_URL_OR_ID
+2026-05-05 15:36:43,830 - bayut_bot - ERROR - Google Sheets URL or ID is not configured.
+2026-05-05 15:36:43,831 - bayut_bot - ERROR - Fatal error: Missing required environment variables: TELEGRAM_TOKEN, GOOGLE_SHEET_URL_OR_ID
+2026-05-05 15:37:15,283 - bayut_bot - ERROR - Google Sheets URL or ID is not configured.
+2026-05-05 15:37:15,284 - bayut_bot - ERROR - Fatal error: Missing required environment variables: TELEGRAM_TOKEN, GOOGLE_SHEET_URL_OR_ID
+2026-05-05 15:42:04,921 - bayut_bot - INFO - Successfully connected to Google Sheets.
+2026-05-05 15:42:04,946 - bayut_bot - INFO - Database initialized successfully.
+2026-05-05 15:42:06,338 - bayut_bot - INFO - Starting bot polling...
+2026-05-05 15:42:06,339 - bayut_bot - INFO - HEARTBEAT: The bot is running and healthy.
+2026-05-05 15:45:41,917 - bayut_bot - INFO - User Afro (988600454) started the bot.
+2026-05-05 15:46:01,754 - bayut_bot - ERROR - Bayut API error: Status 404
+2026-05-05 15:46:10,413 - bayut_bot - INFO - User Afro (988600454) started the bot.
+2026-05-05 15:46:17,874 - bayut_bot - ERROR - Bayut API error: Status 404
+2026-05-05 15:46:59,861 - bayut_bot - INFO - User Afro (988600454) started the bot.
+2026-05-05 15:47:14,844 - bayut_bot - ERROR - Bayut API error: Status 404
+2026-05-05 15:50:56,772 - bayut_bot - INFO - Successfully connected to Google Sheets.
+2026-05-05 15:50:56,779 - bayut_bot - INFO - Database initialized successfully.
+2026-05-05 15:50:57,818 - bayut_bot - INFO - Starting bot polling...
+2026-05-05 15:50:57,819 - bayut_bot - INFO - HEARTBEAT: The bot is running and healthy.
+2026-05-05 15:51:03,856 - bayut_bot - INFO - User Afro (988600454) started the bot.
+2026-05-05 15:51:10,318 - bayut_bot - ERROR - Bayut API error: Status 404, Response: {"message":"API doesn't exists"}
+2026-05-05 15:53:41,658 - bayut_bot - INFO - Successfully connected to Google Sheets.
+2026-05-05 15:53:41,665 - bayut_bot - INFO - Database initialized successfully.
+2026-05-05 15:53:42,171 - bayut_bot - INFO - Starting bot polling...
+2026-05-05 15:53:42,172 - bayut_bot - INFO - HEARTBEAT: The bot is running and healthy.
+2026-05-05 15:53:46,057 - bayut_bot - INFO - User Afro (988600454) started the bot.
+2026-05-05 15:53:50,771 - bayut_bot - WARNING - No BAYUT_API_KEY provided. Returning dummy data for testing.
+2026-05-05 15:56:52,518 - bayut_bot - INFO - Successfully connected to Google Sheets.
+2026-05-05 15:56:52,534 - bayut_bot - INFO - Database initialized successfully.
+2026-05-05 15:56:53,055 - bayut_bot - INFO - Starting bot polling...
+2026-05-05 15:56:53,055 - bayut_bot - INFO - HEARTBEAT: The bot is running and healthy.
+2026-05-05 15:56:58,612 - bayut_bot - INFO - User Afro (988600454) started the bot.
+2026-05-05 15:57:03,706 - bayut_bot - ERROR - Bayut API error: Status 404, Response: {"message":"API doesn't exists"}
+2026-05-05 16:00:46,648 - bayut_bot - INFO - Successfully connected to Google Sheets.
+2026-05-05 16:00:46,658 - bayut_bot - INFO - Database initialized successfully.
+2026-05-05 16:00:47,163 - bayut_bot - INFO - Starting bot polling...
+2026-05-05 16:00:47,164 - bayut_bot - INFO - HEARTBEAT: The bot is running and healthy.
+2026-05-05 16:00:53,722 - bayut_bot - INFO - User Afro (988600454) started the bot.
+2026-05-05 16:01:00,160 - bayut_bot - ERROR - Bayut API error: Status 404, Response: {"message":"API doesn't exists"}
+2026-05-05 16:03:28,417 - bayut_bot - INFO - Successfully connected to Google Sheets.
+2026-05-05 16:03:28,421 - bayut_bot - INFO - Database initialized successfully.
+2026-05-05 16:03:28,929 - bayut_bot - INFO - Starting bot polling...
+2026-05-05 16:03:28,930 - bayut_bot - INFO - HEARTBEAT: The bot is running and healthy.
+2026-05-05 16:03:33,136 - bayut_bot - INFO - User Afro (988600454) started the bot.
+2026-05-05 16:03:38,382 - bayut_bot - ERROR - Bayut API error: Status 404, Response: {"message":"API doesn't exists"}
+2026-05-05 16:10:48,997 - bayut_bot - INFO - Bot stopped by user.
+2026-05-05 16:10:55,908 - bayut_bot - INFO - Successfully connected to Google Sheets.
+2026-05-05 16:10:55,916 - bayut_bot - INFO - Database initialized successfully.
+2026-05-05 16:10:56,850 - bayut_bot - INFO - Starting bot polling...
+2026-05-05 16:10:56,850 - bayut_bot - INFO - HEARTBEAT: The bot is running and healthy.
+2026-05-05 16:11:02,093 - bayut_bot - INFO - User Afro (988600454) started the bot.
+2026-05-05 16:11:08,120 - bayut_bot - ERROR - Bayut API error: Status 404, Response: {"message":"API doesn't exists"}
+2026-05-05 16:17:52,879 - bayut_bot - INFO - Successfully connected to Google Sheets.
+2026-05-05 16:17:52,887 - bayut_bot - INFO - Database initialized successfully.
+2026-05-05 16:17:53,931 - bayut_bot - INFO - Starting bot polling...
+2026-05-05 16:17:53,931 - bayut_bot - INFO - HEARTBEAT: The bot is running and healthy.
+2026-05-05 16:18:01,299 - bayut_bot - INFO - User Afro (988600454) started the bot.
+2026-05-05 16:18:06,268 - bayut_bot - INFO - User Afro (988600454) started the bot.
+2026-05-05 16:18:15,608 - bayut_bot - ERROR - Bayut API error: Status 404, Response: {"message":"API doesn't exists"}
+2026-05-05 16:22:59,806 - bayut_bot - INFO - Successfully connected to Google Sheets.
+2026-05-05 16:22:59,814 - bayut_bot - INFO - Database initialized successfully.
+2026-05-05 16:23:00,651 - bayut_bot - INFO - Starting bot polling...
+2026-05-05 16:23:00,651 - bayut_bot - INFO - HEARTBEAT: The bot is running and healthy.
+2026-05-05 16:23:10,427 - bayut_bot - INFO - User Afro (988600454) started the bot.
+2026-05-05 16:23:17,261 - bayut_bot - ERROR - Bayut API error: Status 404, Response: {"message":"API doesn't exists"}
+2026-05-05 16:26:06,902 - bayut_bot - INFO - Successfully connected to Google Sheets.
+2026-05-05 16:26:06,910 - bayut_bot - INFO - Database initialized successfully.
+2026-05-05 16:26:07,864 - bayut_bot - INFO - Starting bot polling...
+2026-05-05 16:26:07,864 - bayut_bot - INFO - HEARTBEAT: The bot is running and healthy.
+2026-05-05 16:26:13,485 - bayut_bot - INFO - User Afro (988600454) started the bot.
+2026-05-05 16:26:20,244 - bayut_bot - WARNING - No BAYUT_API_KEY provided. Returning dummy data for testing.
+2026-05-05 16:27:49,655 - bayut_bot - INFO - Successfully connected to Google Sheets.
+2026-05-05 16:27:49,663 - bayut_bot - INFO - Database initialized successfully.
+2026-05-05 16:27:50,700 - bayut_bot - INFO - Starting bot polling...
+2026-05-05 16:27:50,700 - bayut_bot - INFO - HEARTBEAT: The bot is running and healthy.
+2026-05-05 16:27:55,905 - bayut_bot - INFO - User Afro (988600454) started the bot.
+2026-05-05 16:28:00,506 - bayut_bot - WARNING - No BAYUT_API_KEY provided. Returning dummy data for testing.
+2026-05-05 16:28:00,881 - bayut_bot - WARNING - Failed to send property photo, falling back to text: Wrong type of the web page content
+2026-05-05 16:28:01,575 - bayut_bot - WARNING - Failed to send property photo, falling back to text: Wrong type of the web page content
+2026-05-05 16:28:33,884 - bayut_bot - INFO - Successfully appended new lead to Google Sheets: 988600454
+2026-05-05 16:28:33,888 - bayut_bot - INFO - Lead successfully saved for user 988600454
+2026-05-05 16:31:50,810 - bayut_bot - INFO - User Afro (988600454) started the bot.
+2026-05-05 16:31:56,994 - bayut_bot - WARNING - No BAYUT_API_KEY provided. Returning dummy data for testing.
+2026-05-05 16:31:57,529 - bayut_bot - WARNING - Failed to send property photo, falling back to text: Wrong type of the web page content
+2026-05-05 16:31:58,656 - bayut_bot - WARNING - Failed to send property photo, falling back to text: Wrong type of the web page content
+2026-05-05 16:32:21,694 - bayut_bot - INFO - Successfully appended new lead to Google Sheets: 988600454
+2026-05-05 16:32:21,697 - bayut_bot - INFO - Lead successfully saved for user 988600454
+2026-05-05 16:39:58,060 - bayut_bot - INFO - Successfully connected to Google Sheets.
+2026-05-05 16:39:58,063 - bayut_bot - INFO - Database initialized successfully.
+2026-05-05 16:39:58,872 - bayut_bot - INFO - Starting bot polling...
+2026-05-05 16:39:58,872 - bayut_bot - INFO - HEARTBEAT: The bot is running and healthy.
+2026-05-05 16:40:00,418 - bayut_bot - INFO - User Afro (988600454) started the bot.
+2026-05-05 16:40:06,398 - bayut_bot - WARNING - No BAYUT_API_KEY provided. Returning dummy data for testing.
+2026-05-05 16:40:06,868 - bayut_bot - WARNING - Failed to send property photo, falling back to text: Wrong type of the web page content
+2026-05-05 16:40:07,686 - bayut_bot - WARNING - Failed to send property photo, falling back to text: Wrong type of the web page content
+2026-05-05 16:41:32,365 - bayut_bot - INFO - Successfully connected to Google Sheets.
+2026-05-05 16:41:32,375 - bayut_bot - INFO - Database initialized successfully.
+2026-05-05 16:41:33,317 - bayut_bot - INFO - Starting bot polling...
+2026-05-05 16:41:33,317 - bayut_bot - INFO - HEARTBEAT: The bot is running and healthy.
+2026-05-05 16:41:38,227 - bayut_bot - INFO - User Afro (988600454) started the bot.
+2026-05-05 16:41:44,040 - bayut_bot - ERROR - Bayut API error: Status 404, Response: {"message":"API doesn't exists"}
+2026-05-05 16:49:11,420 - bayut_bot - INFO - Successfully connected to Google Sheets.
+2026-05-05 16:49:11,428 - bayut_bot - INFO - Database initialized successfully.
+2026-05-05 16:49:12,313 - bayut_bot - INFO - Starting bot polling...
+2026-05-05 16:49:12,313 - bayut_bot - INFO - HEARTBEAT: The bot is running and healthy.
+2026-05-05 16:49:17,812 - bayut_bot - INFO - User Afro (988600454) started the bot.
+2026-05-05 16:49:22,484 - bayut_bot - ERROR - Bayut API error: Status 404, Response: {"message":"Endpoint '\/properties\/list' does not exist"}
+2026-05-05 16:56:17,200 - bayut_bot - INFO - Successfully connected to Google Sheets.
+2026-05-05 16:56:17,211 - bayut_bot - INFO - Database initialized successfully.
+2026-05-05 16:56:18,151 - bayut_bot - INFO - Starting bot polling...
+2026-05-05 16:56:18,151 - bayut_bot - INFO - HEARTBEAT: The bot is running and healthy.
+2026-05-05 16:56:21,612 - bayut_bot - INFO - User Afro (988600454) started the bot.
+2026-05-05 16:56:26,220 - bayut_bot - ERROR - Error connecting to Bayut API: 'https://uae-real-estate2.p.rapidapi.com/floorplans?location_slug=/abu-dhabi/al-reem-island/shams-abu-dhabi/shams-gate-district/the-gate-tower/the-gate-tower-2'+
+2026-05-05 17:00:33,198 - bayut_bot - INFO - Successfully connected to Google Sheets.
+2026-05-05 17:00:33,218 - bayut_bot - INFO - Database initialized successfully.
+2026-05-05 17:00:35,766 - bayut_bot - INFO - Starting bot polling...
+2026-05-05 17:00:35,769 - bayut_bot - INFO - HEARTBEAT: The bot is running and healthy.
+2026-05-05 17:00:38,046 - bayut_bot - INFO - User Afro (988600454) started the bot.
+2026-05-05 17:00:44,009 - bayut_bot - ERROR - Bayut API error: Status 403, Response: {"message":"You are not subscribed to this API."}
+2026-05-05 17:01:24,091 - bayut_bot - INFO - Successfully connected to Google Sheets.
+2026-05-05 17:01:24,108 - bayut_bot - INFO - Database initialized successfully.
+2026-05-05 17:01:26,474 - bayut_bot - INFO - Starting bot polling...
+2026-05-05 17:01:26,482 - bayut_bot - INFO - HEARTBEAT: The bot is running and healthy.
+2026-05-05 17:01:28,854 - bayut_bot - INFO - User Afro (988600454) started the bot.
+2026-05-05 17:01:34,024 - bayut_bot - ERROR - Bayut API error: Status 404, Response: {"message":"Endpoint '\/' does not exist"}
+2026-05-05 17:10:15,244 - bayut_bot - INFO - Successfully connected to Google Sheets.
+2026-05-05 17:10:15,257 - bayut_bot - INFO - Database initialized successfully.
+2026-05-05 17:10:17,694 - bayut_bot - INFO - Starting bot polling...
+2026-05-05 17:10:17,694 - bayut_bot - INFO - HEARTBEAT: The bot is running and healthy.
+2026-05-05 17:10:21,804 - bayut_bot - INFO - User Afro (988600454) started the bot.
+2026-05-05 17:10:38,591 - bayut_bot - WARNING - Bayut API returned no floorplans for location=Dubai Marina slug=/dubai/dubai-marina
+2026-05-05 17:23:25,465 - bayut_bot - INFO - Successfully connected to Google Sheets.
+2026-05-05 17:23:25,479 - bayut_bot - INFO - Database initialized successfully.
+2026-05-05 17:23:28,395 - bayut_bot - INFO - Starting bot polling...
+2026-05-05 17:23:28,403 - bayut_bot - INFO - HEARTBEAT: The bot is running and healthy.
+2026-05-05 17:23:31,812 - bayut_bot - INFO - User Afro (988600454) started the bot.
+2026-05-05 17:28:20,271 - bayut_bot - INFO - Successfully appended new lead to Google Sheets: 988600454
+2026-05-05 17:28:20,271 - bayut_bot - INFO - Lead successfully saved for user 988600454
+2026-05-05 17:28:23,274 - bayut_bot - INFO - User Afro (988600454) started the bot.
+2026-05-05 18:30:01,890 - bayut_bot - INFO - Successfully connected to Google Sheets.
+2026-05-05 18:30:01,916 - bayut_bot - INFO - Database initialized successfully.
+2026-05-05 18:30:03,292 - bayut_bot - INFO - Starting bot polling...
+2026-05-05 18:30:03,294 - bayut_bot - INFO - HEARTBEAT: The bot is running and healthy.
+2026-05-05 18:30:41,655 - bayut_bot - INFO - User Afro (988600454) started the bot.
+2026-05-05 18:31:38,497 - bayut_bot - INFO - Successfully appended new lead to Google Sheets: 988600454
+2026-05-05 18:31:38,502 - bayut_bot - INFO - Lead successfully saved for user 988600454
+2026-05-05 18:34:39,982 - bayut_bot - INFO - Successfully connected to Google Sheets.
+2026-05-05 18:34:39,991 - bayut_bot - INFO - Database initialized successfully.
+2026-05-05 18:34:40,983 - bayut_bot - INFO - Starting bot polling...
+2026-05-05 18:34:40,983 - bayut_bot - INFO - HEARTBEAT: The bot is running and healthy.
+2026-05-05 18:34:54,490 - bayut_bot - INFO - User Afro (988600454) started the bot.
+2026-05-05 18:35:36,655 - bayut_bot - INFO - Successfully appended new lead to Google Sheets: 988600454
+2026-05-05 18:35:36,657 - bayut_bot - INFO - Lead successfully saved for user 988600454
+2026-05-05 18:35:59,493 - bayut_bot - INFO - User Afro (988600454) started the bot.
+2026-05-05 18:36:37,276 - bayut_bot - INFO - Successfully appended new lead to Google Sheets: 988600454
+2026-05-05 18:36:37,279 - bayut_bot - INFO - Lead successfully saved for user 988600454
+2026-05-06 22:28:13,505 - bayut_bot - INFO - Successfully connected to Google Sheets.
+2026-05-06 22:28:13,529 - bayut_bot - INFO - Database initialized successfully.
+2026-05-06 22:28:15,332 - bayut_bot - INFO - Starting bot polling...
+2026-05-06 22:28:15,333 - bayut_bot - INFO - HEARTBEAT: The bot is running and healthy.
+2026-05-06 22:28:37,299 - bayut_bot - INFO - User Afro (988600454) started the bot.
+2026-05-06 22:30:15,540 - bayut_bot - INFO - Successfully appended new lead to Google Sheets: 988600454
+2026-05-06 22:30:15,541 - bayut_bot - INFO - Lead successfully saved for user 988600454
+2026-05-10 14:47:44,661 - bayut_bot - INFO - Successfully connected to Google Sheets.
+2026-05-10 14:47:44,701 - bayut_bot - INFO - Database initialized successfully.
+2026-05-10 14:47:47,782 - bayut_bot - INFO - Starting bot polling...
+2026-05-10 14:47:47,784 - bayut_bot - INFO - HEARTBEAT: The bot is running and healthy.
+2026-05-10 14:47:56,794 - bayut_bot - INFO - User Afro (988600454) started the bot.
+2026-05-10 14:49:25,883 - bayut_bot - ERROR - Error appending lead to Google Sheets: APIError: [403]: The caller does not have permission
+2026-05-10 14:49:25,885 - bayut_bot - ERROR - Failed to save lead for user 988600454
+2026-05-14 20:14:53,599 - bayut_bot - INFO - Successfully connected to Google Sheets.
+2026-05-14 20:14:53,647 - bayut_bot - INFO - Database initialized successfully.
+2026-05-14 20:14:58,423 - bayut_bot - INFO - Starting bot polling...
+2026-05-14 20:14:58,423 - bayut_bot - INFO - HEARTBEAT: The bot is running and healthy.
+2026-05-14 20:15:09,058 - bayut_bot - INFO - User Afro (988600454) started the bot.
